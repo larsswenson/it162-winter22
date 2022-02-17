@@ -1,0 +1,13 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-radius: 5px;
+    border-color: darkgrey;
+    padding: 10px;
+}
