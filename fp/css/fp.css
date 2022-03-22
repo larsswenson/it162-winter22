@@ -1,0 +1,134 @@
+html {
+    background-color: #f2f2f2;
+    
+}
+
+main.wrapper {
+    background-color: white;
+    overflow:auto;
+    font-family: Helvetica, Arial, sans-serif;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+h1>a {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 44px;
+    text-decoration: none;
+    color:#000;
+}
+
+h2 {
+    font-size: 33px;
+}
+
+.logo {
+    color: black;
+    margin-left:1%;
+    margin-right: 20px;
+    text-shadow:1px 1px #ccc;
+    font-size:1.25em;
+}
+/* font awesome icon styles */
+i.logo {
+    color:black; 
+    font-size:1em; /* font awesome icons are text, so make it a bit bigger */
+    margin-left:1%; /* this keeps the icon from being squeeezed to the left */
+}
+/* Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+	clear:both;
+}
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:1280px) {
+	
+    main.wrapper {
+		width:80%;
+		margin:auto;
+	}
+
+    section {
+		width:98.4%;
+		float:left;
+	}
+	
+    
+			
+    img.desktop {
+       	width:100%;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        display:inline-block;
+    }
+    
+    img.tablet, img.phone {
+       	display:none;
+    	}  
+    
+/* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        background-color: #ccc;
+        color:#000;
+   	 }
+}
+
+
+/* TABLET */
+@media all and (min-width:768px) and (max-width:1279px) {
+	
+	section {
+		width:98.4%;
+		float:left;
+	}
+	
+    img.tablet {
+       	width:100%;
+        display:inline-block;
+    }
+    
+    img.desktop, img.phone {
+       	display:none;
+    	}  
+    
+    
+/* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        background-color: #ccc;
+        color:#000;
+    }
+}
+
+/* PHONE */
+@media all and (max-width:767px) {
+    
+    img.phone {
+       	width:100%;
+        display:inline-block;
+    }
+    
+    img.tablet, img.desktop {
+       	display:none;
+    	}  
+
+}
